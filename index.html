@@ -4,50 +4,108 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="./assets/style/style.css" />
     <title>Colton Wilson</title>
 </head>
 <body>
     <header>
+        <img src="assets\imgs\avatar.jpeg" alt="Avatar" class="avatar">
         <h1>Colton James Wilson</h1>
-        <ul>
-            <li><a href="#">About Me</a></li>
-            <li><a href="#">Work</a></li>
-            <li><a href="#">Contact Me</a></li>
-            <li><a href="#">Resume</a></li>
+        <nav>
+            <ul>
+                <li><a href="#about_me">About Me</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#contact_me">Contact Me</a></li>
+                <li><a href="#resume">Resume</a></li>
 
-        </ul>
+            </ul>
+       </nav>
     </header>
 
-    <main>
+    <main>  
+        <aside>
+            <p>This will be the aside</p>
+        </aside>   
         <div class="sections">
-            <section class="about_me">
-                <p>This will be the about me</p>
+            <section id="about_me">
+                <h3>About Me</h3>
+                <p>In college, I was blessed with the opportunity tp choose between two universities.
+                    One path where I could follow my brain and get a bachelor's in Computer Science and
+                    another will I could follow my heart and be a member of an NCAA Men's Swim team
+                    but have to get a degree in Applied Mathematics since they did not offer any
+                    Computer Science or Engineering programs. I choose the latter and decided that not many
+                    people get the opportunity to compete on a collegiate level and I could always further
+                    my education with Computer Science. 
+                    <br>
+                    After College I found myself more in need of financial support than taking on more debt.
+                    I was recruited by some companies and decided it was in my best interest to work for a few
+                    years to build up a savings. After about five years, I found myself being very successful and
+                    was the youngest manager in the company. I did not want to start over and so y dreams of going 
+                    back to school were a distant thought. 
+                    <br>
+                    Then in 2020 the world saw a life-changing pandemic and the line of work I was in was not sure 
+                    if they would stay open. I was offered a chance to leave and I took it as a sign to go and
+                    do something else. I started taking some night classes where I learned HTML, CSS, and JavaScript
+                    but it still wasn't scratching my need to learn. I started looking at some schools and I found
+                    Syracuse University had the best alignment for what I was looking for in a school. For the next
+                    two years I found myself working part-time while being full-time with getting my Master's in Computer
+                    Science. I learned a lot of new languages like C++, Python, and SQL and some great topics like
+                    computer and network security, data mining, and  object oriented programming.
+                    <br>
+                    I currently work as a data analyst in digital products for Target and am already beginning to 
+                    learn so much more than I could have imagined. I enjoy learning and continue to take classes to
+                    improve my front-end programming. I would like to continue learning and adding more languages 
+                    and techniques to my tool-kit. 
+                    </p>
 
             </section>
-            <section class="work">
-                <p>This will be the work</p>
+            <section id="work">
+                <h3>My Work</h3>
+                <div class="card">
+                    <img src="assets\imgs\task1.png" alt="picture of people at an office for webpage" class="task1">
+                    <p>This mock up page has been refractored to meet accessibiltiy standards so that the site is optimized for search engines.</p>
+                    <a href="https://github.com/ColtonWilson/HTML-CSS-refactor" class="btn btn-primary" target="_blank">GitHub Link</a>
+                    <a href="https://coltonwilson.com/HTML-CSS-refactor/" class="btn btn-primary" target="_blank">Page Link</a>
+                </div>      
+            </section>
+            <section id="contact_me">
+                <h3>Contact Me</h3>
+                <form action="action_page.php">
+
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+                    <label for="email">Email</label>
+                    <input type="text" id="email" name="email" placeholder="Your Email..">
+
+                    <label for="subject">Subject</label>
+                    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+                    <input type="submit" value="Submit">
+
+                </form>
 
             </section>
-            <section class="contact_me">
-                <p>This will be the contact me</p>
-
-            </section>
-            <section class="resume">
-                <p>This will be the resume</p>
+            <section id="resume">
+                <h3>Click on the link below to see my CV!</h3>
+                <form method="get" action="assets\CV\Colton_Wilson_Resume.PDF" target="_blank">
+                   <button class="btn" style="width:100%"><i class="fa fa-download" ></i> Download</button>
+                </form>
 
             </section>
         </div>
-        <aside>
-            <p>This will be the aside</p>
-        </aside>
+
     </main>
 
     <footer>
         <h5>Designed by Colton Wilson</h5>
         <ul>
-            <li><a href="#">Github</a></li>
-            <li><a href="#">Linkedin</a></li>
+            <li><a href="https://github.com/ColtonWilson" target="_blank">Github</a></li>
+            <li><a href="https://www.linkedin.com/in/colton-wilson/" target="_blank">Linkedin</a></li>
 
         </ul>
 
